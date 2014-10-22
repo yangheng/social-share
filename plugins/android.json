@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"QQLogin\"><param name=\"android-package\" value=\"org.apache.cordova.qqLogin.QQLogin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Wechat\"><param name=\"android-package\" value=\"xu.li.cordova.wechat.Wechat\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.qqLogin": {
+            "PACKAGE_NAME": "com.example.phdemo"
+        },
+        "xu.li.cordova.wechat": {
+            "PACKAGE_NAME": "com.example.phdemo"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="org.apache.cordova.qqLogin" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>qqLogin</name>
+    <description>qq第三方平台登录插件</description>
+    <js-module name="qqLogin" src="www/qqLogin.js">
+        <clobbers target="qqLogin"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="QQLogin">
+				<param name="android-package" value="org.apache.cordova.qqLogin.QQLogin"/>
+				<param name="onload" value="true" />
+			 </feature>
+        </config-file>
+        <source-file src="src/android/QQLogin.java" target-dir="src/org/apache/cordova/qqLogin"/>
+    </platform>
+</plugin>

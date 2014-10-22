@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:7
+-keep class com.example.phdemo.phdemo { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
